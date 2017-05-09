@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>2048</title>
+</head>
+<body style="text-align: center">
+<div style="margin: 0 auto;">
+    <canvas id="canvas" width="400" height="400" style="background: #FDFFDF;border: 5px solid #EAEAEA"></canvas>
+    <p>
+        说明：移动端请滑动拼图(不要太近哦)，pc端请使用上下左右按键。
+    </p>
+</div>
+<div id="mask" style="position: absolute;left: 0;top: 0;width: 100%;height: 100%;display:none;opacity:1;background: gray;">
+    <div style="position: absolute;left: 50%;top: 50%;transform: translateX(-50%) translateY(-50%);">
+        <canvas id="result" width="400" height="400" style="background: lightcyan;border: 5px solid #EAEAEA;display: none;"></canvas>
+        <div id="mes"></div>
+        <button onclick="start()">重新开始</button>
+    </div>
+</div>
+<button onclick="start()">重新开始</button>
+<script src="js/2048.js"></script>
+</body>
+</html>
